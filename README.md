@@ -4,10 +4,9 @@
 CrudRepository to ReactiveCrudRepository
 
 2.
-<pre>
-<xmp>
-Iterable<Aircraft> to Flux<Aircraft>
-</xmp></pre>
+```java
+Iterable<Aircraft> to  Flux<Aircraft>
+```
 
 3.
 add in maven
