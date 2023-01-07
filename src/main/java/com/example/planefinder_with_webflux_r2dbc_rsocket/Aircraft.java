@@ -52,16 +52,4 @@ public class Aircraft {
                 false, true,
                 Instant.now(), Instant.now(), Instant.now());
     }
-
-//    public void setLastSeenTime(long lastSeenTime) {
-//        this.lastSeenTime = Instant.ofEpochSecond(lastSeenTime);
-//    }
-//
-//    public void setPosUpdateTime(long posUpdateTime) {
-//        this.posUpdateTime = Instant.ofEpochSecond(posUpdateTime);
-//    }
-//
-//    public void setBds40SeenTime(long bds40SeenTime) {
-//        this.bds40SeenTime = Instant.ofEpochSecond(bds40SeenTime);
-//    }
 }

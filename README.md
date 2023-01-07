@@ -9,7 +9,7 @@ Iterable<Aircraft> to  Flux<Aircraft>
 ```
 
 3.
-add in maven
+add to maven R2DBC (and help r2dbc for h2)
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -21,8 +21,9 @@ add in maven
     <scope>runtime</scope>
 </dependency>
 ```
-3.\
+db=h2\
+4
 maybe you need to create table with SQL code, naw we do it by class DbConxInit (we used to do it by @entity)
 
-4.\
+5.
 WebFlux lib and 
