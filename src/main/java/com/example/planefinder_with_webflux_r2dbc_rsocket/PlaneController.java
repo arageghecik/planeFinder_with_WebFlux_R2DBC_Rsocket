@@ -22,19 +22,18 @@ public class PlaneController {
     public Flux<Aircraft> getCurrentAircraft() throws IOException {
         return pfService.getAircraft();
     }
-//    @MessageMapping("acstream")
-//    public Flux<Aircraft> getCurrentACStream() throws IOException {
-//        return pfService.getAircraft().concatWith(
-//                Flux.interval(Duration.ofSeconds(1))
-//                        .flatMap(l -> {
-//                            try {
-//                                return pfService.getAircraft();
-//                            } catch (IOException e) {
-//                                e.printStackTrace();
-//                                return null;
-//                            }
-//
-//                        }));
-//    }
+    @MessageMapping("acstream")
+    public Flux<Aircraft> getCurrentACStream() throws IOException {
+        return pfService.getAircraft().concatWith(
+                Flux.interval(Duration.ofSeconds(1))
+                        .flatMap(l -> {
+                            try {
+                                return pfService.getAircraft();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                                return null;
+                            }
+                        }));
+    }
 
 }
