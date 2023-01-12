@@ -42,3 +42,6 @@ and port for this RSocket endpoint
 spring.rsocket.server.port=7635
 ```
 now, app ready to have RSocket communication
+
+5.
+branch "withoutRSocket" communicate with non Socket way with "/aircraft" endpoint
